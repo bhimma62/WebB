@@ -16,6 +16,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -26,8 +27,10 @@
 
 <body>
 
-  <!-- Tombol Hamburger -->
-  <button class="hamburger" id="hamburger">
+  <!-- ==========================================
+       Tombol Hamburger
+  ========================================== -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
     <div class="hamburger__lines">
       <span></span>
       <span></span>
@@ -37,55 +40,93 @@
 
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-  <!-- Sidebar -->
+  <!-- ==========================================
+       Sidebar
+  ========================================== -->
   <aside class="sidebar" id="sidebar">
 
     <div class="sidebar__brand">
       <div class="sidebar__logo">Beni<span>W</span>eb</div>
-      <div class="sidebar__tagline">Es Krim Lezat untuk Semua</div>
+      <div class="sidebar__tagline">
+        Es Krim Lezat untuk Semua
+      </div>
     </div>
 
     <nav class="sidebar__nav">
       <ul>
 
-        <li><a href="#hero" class="active">Beranda</a></li>
-        <li><a href="#flavors">Varian Rasa</a></li>
-        <li><a href="#builder">Buat Sendiri</a></li>
-        <li><a href="#catering">Catering</a></li>
-        <li><a href="#seasonal">Menu Musiman</a></li>
-        <li><a href="#loyalty">Member</a></li>
+        <li>
+          <a href="#hero" class="active">
+            <span class="nav-icon">&#9678;</span> Beranda
+          </a>
+        </li>
+
+        <li>
+          <a href="#flavors">
+            <span class="nav-icon">&#10047;</span> Varian Rasa
+          </a>
+        </li>
+
+        <li>
+          <a href="#builder">
+            <span class="nav-icon">&#9733;</span> Buat Sendiri
+          </a>
+        </li>
+
+        <li>
+          <a href="#catering">
+            <span class="nav-icon">&#9738;</span> Catering
+          </a>
+        </li>
+
+        <li>
+          <a href="#seasonal">
+            <span class="nav-icon">&#10053;</span> Musiman
+          </a>
+        </li>
+
+        <li>
+          <a href="#loyalty">
+            <span class="nav-icon">&#10084;</span> Member
+          </a>
+        </li>
 
         <li style="list-style:none;padding:15px;">
+
           <div style="
-            background:#4a4e69;
+            background-color:#4a4e69;
             padding:20px;
             border-radius:12px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
           ">
 
             <p id="userInfo" style="
+              margin:0 0 12px 0;
               color:white;
-              margin-bottom:12px;
               font-size:14px;
             ">
               Belum Login
             </p>
 
             <div id="authArea">
+
               <button onclick="goLogin()" class="nav-cta" style="
-                width:100%;
-                border:none;
-                padding:10px;
-                border-radius:8px;
-                background:#ff8c69;
+                background-color:#ff8c69;
                 color:white;
+                border:none;
+                padding:8px 20px;
+                border-radius:6px;
                 font-weight:bold;
                 cursor:pointer;
+                width:100%;
               ">
                 Login
               </button>
+
             </div>
 
           </div>
+
         </li>
 
       </ul>
@@ -93,18 +134,23 @@
 
     <div class="sidebar__footer">
       <div class="sidebar__hours">
+
         <strong>Jam Operasional</strong><br>
-        Senin - Jumat : 11.00 - 21.00<br>
-        Sabtu - Minggu : 10.00 - 22.00
+
+        Senin – Jumat: 11.00 – 21.00<br>
+        Sabtu – Minggu: 10.00 – 22.00
+
       </div>
     </div>
 
   </aside>
 
-  <!-- Main -->
+  <!-- ==========================================
+       Main Content
+  ========================================== -->
   <main class="main">
 
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero" id="hero">
 
       <div class="hero__content">
@@ -123,6 +169,7 @@
         </p>
 
         <div class="hero__actions reveal reveal-delay-3">
+
           <a href="#flavors" class="btn btn--primary">
             Lihat Menu
           </a>
@@ -130,12 +177,13 @@
           <a href="#catering" class="btn btn--outline">
             Pesan Catering
           </a>
+
         </div>
 
       </div>
 
       <!-- Dekorasi -->
-      <div class="hero__deco">
+      <div class="hero__deco" aria-hidden="true">
 
         <div class="scoop scoop--strawberry">
           <div class="scoop--highlight"></div>
@@ -153,7 +201,9 @@
 
     </section>
 
-    <!-- Flavor -->
+    <!-- ==========================================
+         FLAVOR SECTION
+    ========================================== -->
     <section class="section section--alt flavors-section" id="flavors">
 
       <div class="section__header reveal">
@@ -176,12 +226,11 @@
 
         <div class="marquee__track">
 
-          <!-- Flavor 1 -->
+          <!-- Flavor -->
           <div class="flavor-card">
 
             <div class="flavor-card__swatch"
-            style="background: radial-gradient(circle at 35% 35%, #fce4b8, #e6c68a);">
-            </div>
+            style="background: radial-gradient(circle at 35% 35%, #fce4b8, #e6c68a);"></div>
 
             <div class="flavor-card__info">
 
@@ -194,14 +243,13 @@
               </h3>
 
               <p class="flavor-card__desc">
-                Gelato vanila creamy dengan aroma vanila asli yang lembut dan manis.
+                Vanila creamy dengan aroma lembut dan rasa manis premium.
               </p>
 
             </div>
 
           </div>
 
-          <!-- Flavor 2 -->
           <div class="flavor-card">
 
             <div class="flavor-card__tag">
@@ -209,8 +257,7 @@
             </div>
 
             <div class="flavor-card__swatch"
-            style="background: radial-gradient(circle at 35% 35%, #6b3a2a, #3e2118);">
-            </div>
+            style="background: radial-gradient(circle at 35% 35%, #6b3a2a, #3e2118);"></div>
 
             <div class="flavor-card__info">
 
@@ -223,19 +270,17 @@
               </h3>
 
               <p class="flavor-card__desc">
-                Rasa coklat premium yang pekat dengan tekstur super lembut.
+                Coklat premium dengan rasa pekat dan tekstur super lembut.
               </p>
 
             </div>
 
           </div>
 
-          <!-- Flavor 3 -->
           <div class="flavor-card">
 
             <div class="flavor-card__swatch"
-            style="background: radial-gradient(circle at 35% 35%, #b6d7a8, #7ab55c);">
-            </div>
+            style="background: radial-gradient(circle at 35% 35%, #b6d7a8, #7ab55c);"></div>
 
             <div class="flavor-card__info">
 
@@ -248,14 +293,13 @@
               </h3>
 
               <p class="flavor-card__desc">
-                Matcha autentik Jepang dengan rasa creamy dan segar.
+                Matcha autentik Jepang dengan rasa creamy dan menyegarkan.
               </p>
 
             </div>
 
           </div>
 
-          <!-- Flavor 4 -->
           <div class="flavor-card">
 
             <div class="flavor-card__tag">
@@ -263,8 +307,7 @@
             </div>
 
             <div class="flavor-card__swatch"
-            style="background: radial-gradient(circle at 35% 35%, #f4a4b8, #e07a8a);">
-            </div>
+            style="background: radial-gradient(circle at 35% 35%, #f4a4b8, #e07a8a);"></div>
 
             <div class="flavor-card__info">
 
@@ -277,7 +320,7 @@
               </h3>
 
               <p class="flavor-card__desc">
-                Sorbet stroberi segar dengan rasa manis alami dan menyegarkan.
+                Sorbet stroberi segar dengan rasa manis alami.
               </p>
 
             </div>
@@ -290,7 +333,9 @@
 
     </section>
 
-    <!-- Builder -->
+    <!-- ==========================================
+         BUILDER
+    ========================================== -->
     <section class="section builder" id="builder">
 
       <div class="section__header reveal">
@@ -304,7 +349,7 @@
         </h2>
 
         <p class="section__desc">
-          Pilih rasa, topping, dan saus favoritmu untuk pengalaman terbaik.
+          Pilih topping dan saus favoritmu.
         </p>
 
       </div>
@@ -314,51 +359,65 @@
         <div class="builder__steps">
 
           <div class="builder-step reveal">
+
             <div class="builder-step__num">1</div>
 
             <div>
+
               <h3 class="builder-step__title">
                 Pilih Base
               </h3>
 
               <p class="builder-step__text">
-                Ice cream, gelato, yogurt, atau sorbet segar.
+                Ice cream, gelato, yogurt, atau sorbet.
               </p>
+
             </div>
+
           </div>
 
           <div class="builder-step reveal">
+
             <div class="builder-step__num">2</div>
 
             <div>
+
               <h3 class="builder-step__title">
                 Pilih Cone
               </h3>
 
               <p class="builder-step__text">
-                Cone klasik, waffle cone, atau cup premium.
+                Cone klasik atau waffle cone premium.
               </p>
+
             </div>
+
           </div>
 
           <div class="builder-step reveal">
+
             <div class="builder-step__num">3</div>
 
             <div>
+
               <h3 class="builder-step__title">
                 Tambahkan Topping
               </h3>
 
               <p class="builder-step__text">
-                Oreo, coklat, mochi, marshmallow, buah segar, dan lainnya.
+                Oreo, mochi, marshmallow, dan lainnya.
               </p>
+
             </div>
+
           </div>
 
           <div class="builder-step reveal">
+
             <div class="builder-step__num">4</div>
 
             <div>
+
               <h3 class="builder-step__title">
                 Tambahkan Saus
               </h3>
@@ -366,7 +425,9 @@
               <p class="builder-step__text">
                 Saus coklat, karamel, matcha, atau strawberry.
               </p>
+
             </div>
+
           </div>
 
         </div>
@@ -375,13 +436,15 @@
 
     </section>
 
-    <!-- Catering -->
+    <!-- ==========================================
+         CATERING
+    ========================================== -->
     <section class="section section--alt" id="catering">
 
       <div class="section__header reveal">
 
         <span class="section__label">
-          Catering
+          Catering Es Krim
         </span>
 
         <h2 class="section__title">
@@ -394,85 +457,81 @@
 
       </div>
 
-    </section>
+      <div class="catering__grid">
 
-    <!-- Seasonal -->
-    <section class="section" id="seasonal">
+        <!-- Card -->
+        <div class="cart-card reveal">
 
-      <div class="section__header reveal">
+          <div class="cart-card__visual">
 
-        <span class="section__label">
-          Menu Musiman
-        </span>
+            <img src="images/the-mini-scoop.avif"
+            alt="Catering es krim pesta kecil"
+            loading="lazy">
 
-        <h2 class="section__title">
-          Menu spesial setiap musim
-        </h2>
+            <span class="cart-card__visual-label">
+              Mini
+            </span>
 
-        <p class="section__desc">
-          Varian rasa unik yang hanya tersedia di waktu tertentu.
-        </p>
+          </div>
 
-      </div>
+          <div class="cart-card__body">
 
-    </section>
+            <h3 class="cart-card__name">
+              Paket Mini
+            </h3>
 
-    <!-- Loyalty -->
-    <section class="section section--alt loyalty" id="loyalty">
+            <p class="cart-card__desc">
+              Cocok untuk pesta kecil dan ulang tahun.
+            </p>
 
-      <div class="section__header reveal">
+            <div class="cart-card__price">
+              Rp 2.000.000
+            </div>
 
-        <span class="section__label">
-          Member BeniWeb
-        </span>
-
-        <h2 class="section__title">
-          Makin sering beli makin untung
-        </h2>
-
-        <p class="section__desc">
-          Kumpulkan poin dan dapatkan es krim gratis.
-        </p>
-
-      </div>
-
-      <div class="stamp-card reveal">
-
-        <div class="stamp-card__header">
-          <span class="stamp-card__title">
-            Kartu Member
-          </span>
-
-          <span class="stamp-card__count">
-            7 / 10
-          </span>
-        </div>
-
-        <div class="stamp-card__grid">
-
-          <div class="stamp stamp--filled">🍦</div>
-          <div class="stamp stamp--filled">🍦</div>
-          <div class="stamp stamp--filled">🍦</div>
-          <div class="stamp stamp--filled">🍦</div>
-          <div class="stamp stamp--filled">🍦</div>
-          <div class="stamp stamp--filled">🍦</div>
-          <div class="stamp stamp--filled">🍦</div>
-
-          <div class="stamp">🍦</div>
-          <div class="stamp">🍦</div>
-          <div class="stamp stamp--reward">FREE</div>
+          </div>
 
         </div>
 
-        <p class="stamp-card__footer">
-          Tinggal 3 pembelian lagi untuk es krim gratis!
-        </p>
+        <!-- Card -->
+        <div class="cart-card reveal">
+
+          <div class="cart-card__visual">
+
+            <img src="images/the-classic-cart.avif"
+            alt="Gerobak es krim vintage"
+            loading="lazy">
+
+            <span class="cart-card__visual-label">
+              Favorit
+            </span>
+
+          </div>
+
+          <div class="cart-card__body">
+
+            <h3 class="cart-card__name">
+              Paket Classic
+            </h3>
+
+            <p class="cart-card__desc">
+              Untuk wedding dan acara besar.
+            </p>
+
+            <div class="cart-card__price">
+              Rp 5.000.000
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
     </section>
 
-    <!-- Footer -->
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
     <footer class="footer">
 
       <div class="footer__top">
@@ -484,58 +543,19 @@
           </div>
 
           <p class="footer__copy">
-            Es krim handmade premium dengan rasa terbaik dan bahan berkualitas.
+            Es krim premium handmade dengan rasa terbaik.
           </p>
-
-        </div>
-
-        <div class="footer__links">
-
-          <div class="footer__col">
-
-            <h4>Menu</h4>
-
-            <ul>
-              <li><a href="#flavors">Varian Rasa</a></li>
-              <li><a href="#builder">Buat Sendiri</a></li>
-              <li><a href="#seasonal">Menu Musiman</a></li>
-              <li><a href="#catering">Catering</a></li>
-            </ul>
-
-          </div>
-
-          <div class="footer__col">
-
-            <h4>Perusahaan</h4>
-
-            <ul>
-              <li><a href="#">Tentang Kami</a></li>
-              <li><a href="#">Karir</a></li>
-              <li><a href="#">Kontak</a></li>
-            </ul>
-
-          </div>
-
-          <div class="footer__col">
-
-            <h4>Sosial Media</h4>
-
-            <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">TikTok</a></li>
-            </ul>
-
-          </div>
 
         </div>
 
       </div>
 
       <div class="footer__bottom">
+
         <p>
           &copy; 2026 BeniWeb. Semua Hak Dilindungi.
         </p>
+
       </div>
 
     </footer>
