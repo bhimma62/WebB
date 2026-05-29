@@ -1,4 +1,4 @@
-/* Neumorphism Login Form - Updated Color Palette to match 'Beni' Web */
+/* Neumorphism Login Form - Palette Warna Web Beni (Krem & Navy) */
 
 * {
     margin: 0;
@@ -8,8 +8,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    /* Latar belakang krem hangat dari web Beni */
-    background: #f4f1de; 
+    /* Latar belakang krem gading dari web Beni */
+    background: #F9F3E5; 
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -24,12 +24,12 @@ body {
 }
 
 .login-card {
-    background: #f4f1de;
+    background: #F9F3E5;
     border-radius: 30px;
     padding: 50px 40px;
-    /* Shadow disesuaikan dengan warna background krem */
+    /* Shadow disesuaikan: #D9D2C4 adalah versi gelap dari krem background */
     box-shadow: 
-        20px 20px 60px #cfccbc,
+        20px 20px 60px #d9d2c4,
         -20px -20px 60px #ffffff;
     position: relative;
     transition: all 0.3s ease;
@@ -48,24 +48,24 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 auto 24px;
-    background: #f4f1de;
+    background: #F9F3E5;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 
-        8px 8px 20px #cfccbc,
+        8px 8px 20px #d9d2c4,
         -8px -8px 20px #ffffff,
-        inset 0 0 0 #cfccbc,
+        inset 0 0 0 #d9d2c4,
         inset 0 0 0 #ffffff;
     transition: all 0.3s ease;
 }
 
 .neu-icon:hover {
     box-shadow: 
-        4px 4px 10px #cfccbc,
+        4px 4px 10px #d9d2c4,
         -4px -4px 10px #ffffff,
-        inset 4px 4px 10px #cfccbc,
+        inset 4px 4px 10px #d9d2c4,
         inset -4px -4px 10px #ffffff;
 }
 
@@ -75,8 +75,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Warna biru tua dari sidebar */
-    color: #3d4468; 
+    /* Biru Navy Beni */
+    color: #3E4462; 
 }
 
 .icon-inner svg {
@@ -85,15 +85,16 @@ body {
 }
 
 .login-header h2 {
-    /* Judul biru tua */
-    color: #3d4468; 
+    /* Biru Navy Beni */
+    color: #3E4462; 
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 .login-header p {
-    color: #8d91a7;
+    /* Warna teks sekunder lebih soft dari Navy */
+    color: #7A8099;
     font-size: 15px;
     font-weight: 400;
 }
@@ -106,17 +107,17 @@ body {
 
 .neu-input {
     position: relative;
-    background: #f4f1de;
+    background: #F9F3E5;
     border-radius: 15px;
     box-shadow: 
-        inset 8px 8px 16px #cfccbc,
+        inset 8px 8px 16px #d9d2c4,
         inset -8px -8px 16px #ffffff;
     transition: all 0.3s ease;
 }
 
 .neu-input:focus-within {
     box-shadow: 
-        inset 4px 4px 8px #cfccbc,
+        inset 4px 4px 8px #d9d2c4,
         inset -4px -4px 8px #ffffff;
 }
 
@@ -126,15 +127,10 @@ body {
     border: none;
     padding: 20px 24px;
     padding-left: 55px;
-    color: #3d4468;
+    color: #3E4462;
     font-size: 16px;
     font-weight: 500;
     outline: none;
-    transition: all 0.3s ease;
-}
-
-.neu-input input::placeholder {
-    color: transparent;
 }
 
 .neu-input label {
@@ -142,9 +138,8 @@ body {
     left: 55px;
     top: 50%;
     transform: translateY(-50%);
-    color: #8d91a7;
+    color: #7A8099;
     font-size: 16px;
-    font-weight: 400;
     pointer-events: none;
     transition: all 0.3s ease;
 }
@@ -153,7 +148,7 @@ body {
 .neu-input input:not(:placeholder-shown) + label {
     top: 8px;
     font-size: 12px;
-    color: #3d4468;
+    color: #FF8C68; /* Aksen Peach saat fokus */
     transform: translateY(0);
 }
 
@@ -164,30 +159,20 @@ body {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    color: #8d91a7;
-    transition: all 0.3s ease;
-}
-
-.input-icon svg {
-    width: 100%;
-    height: 100%;
+    color: #7A8099;
 }
 
 .neu-input:focus-within .input-icon {
-    color: #3d4468;
+    color: #FF8C68; /* Ikon jadi Peach saat klik */
 }
 
 /* Password Toggle */
-.password-group {
-    padding-right: 50px;
-}
-
 .neu-toggle {
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    background: #f4f1de;
+    background: #F9F3E5;
     border: none;
     width: 35px;
     height: 35px;
@@ -196,250 +181,110 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #8d91a7;
+    color: #7A8099;
     box-shadow: 
-        4px 4px 10px #cfccbc,
+        4px 4px 10px #d9d2c4,
         -4px -4px 10px #ffffff;
     transition: all 0.3s ease;
 }
 
 .neu-toggle:hover {
-    color: #3d4468;
-}
-
-.neu-toggle:active {
-    box-shadow: 
-        inset 2px 2px 5px #cfccbc,
-        inset -2px -2px 5px #ffffff;
-}
-
-.neu-toggle svg {
-    width: 18px;
-    height: 18px;
-}
-
-.eye-closed {
-    display: none;
-}
-
-.neu-toggle.show-password .eye-open {
-    display: none;
-}
-
-.neu-toggle.show-password .eye-closed {
-    display: block;
+    color: #3E4462;
 }
 
 /* Form Options */
-.form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.remember-wrapper {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.remember-wrapper input[type="checkbox"] {
-    display: none;
-}
-
 .checkbox-label {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-    user-select: none;
-    color: #3d4468;
+    color: #3E4462;
     font-size: 14px;
-    font-weight: 500;
 }
 
 .neu-checkbox {
-    width: 22px;
-    height: 22px;
-    background: #f4f1de;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #F9F3E5;
     box-shadow: 
-        3px 3px 8px #cfccbc,
+        3px 3px 8px #d9d2c4,
         -3px -3px 8px #ffffff;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.remember-wrapper input[type="checkbox"]:checked + .checkbox-label .neu-checkbox {
-    box-shadow: 
-        inset 2px 2px 5px #cfccbc,
-        inset -2px -2px 5px #ffffff;
 }
 
 .neu-checkbox svg {
-    width: 14px;
-    height: 14px;
-    /* Warna oranye peach dari tombol Beni */
-    color: #ff8c69; 
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.3s ease;
-}
-
-.remember-wrapper input[type="checkbox"]:checked + .checkbox-label .neu-checkbox svg {
-    opacity: 1;
-    transform: scale(1);
+    /* Warna Orange Beni */
+    color: #FF8C68; 
 }
 
 .forgot-link {
-    color: #3d4468;
-    text-decoration: none;
-    font-size: 14px;
+    color: #3E4462;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 .forgot-link:hover {
-    color: #ff8c69; /* Hover warna peach */
+    color: #FF8C68;
 }
 
 /* Neumorphic Button */
 .neu-button {
     width: 100%;
-    background: #f4f1de;
+    background: #F9F3E5;
     border: none;
     border-radius: 15px;
     padding: 18px 32px;
-    color: #3d4468;
+    /* Tulisan di tombol jadi Navy */
+    color: #3E4462; 
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    margin-bottom: 30px;
     box-shadow: 
-        8px 8px 20px #cfccbc,
+        8px 8px 20px #d9d2c4,
         -8px -8px 20px #ffffff;
     transition: all 0.3s ease;
-    overflow: hidden;
-}
-
-.neu-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s ease;
 }
 
 .neu-button:hover {
     transform: translateY(-2px);
     box-shadow: 
-        12px 12px 30px #cfccbc,
+        12px 12px 30px #d9d2c4,
         -12px -12px 30px #ffffff;
-    /* Sedikit perubahan warna teks saat hover agar senada dengan Beni */
-    color: #ff8c69;
-}
-
-.neu-button:hover::before {
-    left: 100%;
+    /* Hover berubah jadi Orange Beni */
+    color: #FF8C68; 
 }
 
 .neu-button:active {
-    transform: translateY(0);
     box-shadow: 
-        inset 4px 4px 10px #cfccbc,
+        inset 4px 4px 10px #d9d2c4,
         inset -4px -4px 10px #ffffff;
 }
 
 /* Divider */
-.divider {
-    display: flex;
-    align-items: center;
-    margin: 30px 0;
-    gap: 16px;
-}
-
 .divider-line {
-    flex: 1;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #cfccbc, transparent);
+    background: linear-gradient(90deg, transparent, #d9d2c4, transparent);
 }
 
 .divider span {
-    color: #8d91a7;
-    font-size: 13px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #7A8099;
 }
 
 /* Social Login */
-.social-login {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 30px;
-}
-
 .neu-social {
-    width: 50px;
-    height: 50px;
-    background: #f4f1de;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #3d4468;
+    background: #F9F3E5;
+    color: #3E4462;
     box-shadow: 
-        6px 6px 15px #cfccbc,
+        6px 6px 15px #d9d2c4,
         -6px -6px 15px #ffffff;
-    transition: all 0.3s ease;
 }
 
 .neu-social:hover {
-    transform: translateY(-2px);
+    color: #FF8C68;
     box-shadow: 
-        8px 8px 20px #cfccbc,
+        8px 8px 20px #d9d2c4,
         -8px -8px 20px #ffffff;
-    color: #ff8c69;
-}
-
-.neu-social:active {
-    transform: translateY(0);
-    box-shadow: 
-        inset 3px 3px 8px #cfccbc,
-        inset -3px -3px 8px #ffffff;
 }
 
 /* Signup Link */
-.signup-link {
-    text-align: center;
-}
-
 .signup-link p {
-    color: #8d91a7;
-    font-size: 14px;
+    color: #7A8099;
 }
 
 .signup-link a {
-    color: #3d4468;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: #3E4462;
 }
 
 .signup-link a:hover {
-    color: #ff8c69;
+    color: #FF8C68;
 }
