@@ -1,4 +1,4 @@
-/* Neumorphism Login Form - HANYA UBAH WARNA */
+/* Neumorphism Login Form - Complete & Self-Contained */
 
 * {
     margin: 0;
@@ -8,8 +8,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    /* Latar belakang krem dari web Beni */
-    background: #F9F3E5; 
+    background: #e0e5ec;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -24,12 +23,11 @@ body {
 }
 
 .login-card {
-    background: #F9F3E5;
+    background: #e0e5ec;
     border-radius: 30px;
     padding: 50px 40px;
-    /* Shadow disesuaikan dengan background baru */
     box-shadow: 
-        20px 20px 60px #d9d2c4,
+        20px 20px 60px #bec3cf,
         -20px -20px 60px #ffffff;
     position: relative;
     transition: all 0.3s ease;
@@ -48,24 +46,24 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 auto 24px;
-    background: #F9F3E5;
+    background: #e0e5ec;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 
-        8px 8px 20px #d9d2c4,
+        8px 8px 20px #bec3cf,
         -8px -8px 20px #ffffff,
-        inset 0 0 0 #d9d2c4,
+        inset 0 0 0 #bec3cf,
         inset 0 0 0 #ffffff;
     transition: all 0.3s ease;
 }
 
 .neu-icon:hover {
     box-shadow: 
-        4px 4px 10px #d9d2c4,
+        4px 4px 10px #bec3cf,
         -4px -4px 10px #ffffff,
-        inset 4px 4px 10px #d9d2c4,
+        inset 4px 4px 10px #bec3cf,
         inset -4px -4px 10px #ffffff;
 }
 
@@ -75,8 +73,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Biru Navy dari sidebar */
-    color: #3E4462; 
+    color: #6c7293;
 }
 
 .icon-inner svg {
@@ -85,14 +82,14 @@ body {
 }
 
 .login-header h2 {
-    color: #3E4462;
+    color: #3d4468;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 .login-header p {
-    color: #8D91A7;
+    color: #9499b7;
     font-size: 15px;
     font-weight: 400;
 }
@@ -105,17 +102,17 @@ body {
 
 .neu-input {
     position: relative;
-    background: #F9F3E5;
+    background: #e0e5ec;
     border-radius: 15px;
     box-shadow: 
-        inset 8px 8px 16px #d9d2c4,
+        inset 8px 8px 16px #bec3cf,
         inset -8px -8px 16px #ffffff;
     transition: all 0.3s ease;
 }
 
 .neu-input:focus-within {
     box-shadow: 
-        inset 4px 4px 8px #d9d2c4,
+        inset 4px 4px 8px #bec3cf,
         inset -4px -4px 8px #ffffff;
 }
 
@@ -125,7 +122,7 @@ body {
     border: none;
     padding: 20px 24px;
     padding-left: 55px;
-    color: #3E4462;
+    color: #3d4468;
     font-size: 16px;
     font-weight: 500;
     outline: none;
@@ -141,7 +138,7 @@ body {
     left: 55px;
     top: 50%;
     transform: translateY(-50%);
-    color: #8D91A7;
+    color: #9499b7;
     font-size: 16px;
     font-weight: 400;
     pointer-events: none;
@@ -152,7 +149,7 @@ body {
 .neu-input input:not(:placeholder-shown) + label {
     top: 8px;
     font-size: 12px;
-    color: #3E4462;
+    color: #6c7293;
     transform: translateY(0);
 }
 
@@ -163,7 +160,7 @@ body {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    color: #8D91A7;
+    color: #9499b7;
     transition: all 0.3s ease;
 }
 
@@ -173,7 +170,7 @@ body {
 }
 
 .neu-input:focus-within .input-icon {
-    color: #3E4462;
+    color: #6c7293;
 }
 
 /* Password Toggle */
@@ -186,7 +183,7 @@ body {
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    background: #F9F3E5;
+    background: #e0e5ec;
     border: none;
     width: 35px;
     height: 35px;
@@ -195,20 +192,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #8D91A7;
+    color: #9499b7;
     box-shadow: 
-        4px 4px 10px #d9d2c4,
+        4px 4px 10px #bec3cf,
         -4px -4px 10px #ffffff;
     transition: all 0.3s ease;
 }
 
 .neu-toggle:hover {
-    color: #3E4462;
+    color: #6c7293;
 }
 
 .neu-toggle:active {
     box-shadow: 
-        inset 2px 2px 5px #d9d2c4,
+        inset 2px 2px 5px #bec3cf,
         inset -2px -2px 5px #ffffff;
 }
 
@@ -255,7 +252,7 @@ body {
     gap: 12px;
     cursor: pointer;
     user-select: none;
-    color: #3E4462;
+    color: #6c7293;
     font-size: 14px;
     font-weight: 500;
 }
@@ -263,13 +260,13 @@ body {
 .neu-checkbox {
     width: 22px;
     height: 22px;
-    background: #F9F3E5;
+    background: #e0e5ec;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 
-        3px 3px 8px #d9d2c4,
+        3px 3px 8px #bec3cf,
         -3px -3px 8px #ffffff;
     transition: all 0.3s ease;
     position: relative;
@@ -278,15 +275,14 @@ body {
 
 .remember-wrapper input[type="checkbox"]:checked + .checkbox-label .neu-checkbox {
     box-shadow: 
-        inset 2px 2px 5px #d9d2c4,
+        inset 2px 2px 5px #bec3cf,
         inset -2px -2px 5px #ffffff;
 }
 
 .neu-checkbox svg {
     width: 14px;
     height: 14px;
-    /* Aksen oranye peach dari tombol Beni */
-    color: #FF8C68; 
+    color: #00c896;
     opacity: 0;
     transform: scale(0);
     transition: all 0.3s ease;
@@ -298,7 +294,7 @@ body {
 }
 
 .forgot-link {
-    color: #3E4462;
+    color: #6c7293;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -306,24 +302,24 @@ body {
 }
 
 .forgot-link:hover {
-    color: #FF8C68;
+    color: #3d4468;
 }
 
 /* Neumorphic Button */
 .neu-button {
     width: 100%;
-    background: #F9F3E5;
+    background: #e0e5ec;
     border: none;
     border-radius: 15px;
     padding: 18px 32px;
-    color: #3E4462;
+    color: #3d4468;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     position: relative;
     margin-bottom: 30px;
     box-shadow: 
-        8px 8px 20px #d9d2c4,
+        8px 8px 20px #bec3cf,
         -8px -8px 20px #ffffff;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -343,9 +339,8 @@ body {
 .neu-button:hover {
     transform: translateY(-2px);
     box-shadow: 
-        12px 12px 30px #d9d2c4,
+        12px 12px 30px #bec3cf,
         -12px -12px 30px #ffffff;
-    color: #FF8C68;
 }
 
 .neu-button:hover::before {
@@ -355,7 +350,7 @@ body {
 .neu-button:active {
     transform: translateY(0);
     box-shadow: 
-        inset 4px 4px 10px #d9d2c4,
+        inset 4px 4px 10px #bec3cf,
         inset -4px -4px 10px #ffffff;
 }
 
@@ -377,8 +372,8 @@ body {
 .neu-spinner {
     width: 20px;
     height: 20px;
-    border: 3px solid #d9d2c4;
-    border-top: 3px solid #3E4462;
+    border: 3px solid #bec3cf;
+    border-top: 3px solid #6c7293;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -407,11 +402,11 @@ body {
 .divider-line {
     flex: 1;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #d9d2c4, transparent);
+    background: linear-gradient(90deg, transparent, #bec3cf, transparent);
 }
 
 .divider span {
-    color: #8D91A7;
+    color: #9499b7;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -429,16 +424,16 @@ body {
 .neu-social {
     width: 50px;
     height: 50px;
-    background: #F9F3E5;
+    background: #e0e5ec;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3E4462;
+    color: #6c7293;
     box-shadow: 
-        6px 6px 15px #d9d2c4,
+        6px 6px 15px #bec3cf,
         -6px -6px 15px #ffffff;
     transition: all 0.3s ease;
 }
@@ -446,15 +441,14 @@ body {
 .neu-social:hover {
     transform: translateY(-2px);
     box-shadow: 
-        8px 8px 20px #d9d2c4,
+        8px 8px 20px #bec3cf,
         -8px -8px 20px #ffffff;
-    color: #FF8C68;
 }
 
 .neu-social:active {
     transform: translateY(0);
     box-shadow: 
-        inset 3px 3px 8px #d9d2c4,
+        inset 3px 3px 8px #bec3cf,
         inset -3px -3px 8px #ffffff;
 }
 
@@ -469,19 +463,19 @@ body {
 }
 
 .signup-link p {
-    color: #8D91A7;
+    color: #9499b7;
     font-size: 14px;
 }
 
 .signup-link a {
-    color: #3E4462;
+    color: #6c7293;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .signup-link a:hover {
-    color: #FF8C68;
+    color: #3d4468;
 }
 
 /* Error States */
@@ -525,19 +519,19 @@ body {
 }
 
 .success-message .neu-icon {
-    background: #F9F3E5;
-    color: #FF8C68;
+    background: #e0e5ec;
+    color: #00c896;
     margin-bottom: 20px;
 }
 
 .success-message h3 {
-    color: #3E4462;
+    color: #3d4468;
     font-size: 1.5rem;
     margin-bottom: 8px;
 }
 
 .success-message p {
-    color: #8D91A7;
+    color: #9499b7;
     font-size: 14px;
 }
 
