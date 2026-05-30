@@ -1482,3 +1482,13 @@ button {
 		padding-right: 1.25rem;
 	}
 }
+
+.nav-cta {
+    background-color: #ff8e6e !important; /* Warna oranye */
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
