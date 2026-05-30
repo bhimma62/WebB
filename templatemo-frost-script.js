@@ -157,3 +157,34 @@ https://templatemo.com/tm-613-frost-bakery
       });
 
     })();
+
+/* --- KODE LOGIN/LOGOUT CUSTOM --- */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const user = localStorage.getItem("username");
+    const userInfo = document.getElementById("userInfo");
+    const authArea = document.getElementById("authArea");
+
+    if (user && userInfo && authArea) {
+        // Ganti teks sapaan
+        userInfo.innerText = "Halo, " + user;
+
+        // Ganti tombol jadi Logout (class nav-cta agar tetap oranye)
+        authArea.innerHTML = `
+            <button onclick="logout()" class="nav-cta">Logout</button>
+        `;
+    }
+});
+
+function goLogin() {
+    window.location.href = "login/index.html";
+}
+
+function logout() {
+    localStorage.removeItem("username");
+    location.reload(); 
+}
+
+// Ekspos ke global agar onclick di HTML bisa baca
+window.goLogin = goLogin;
+window.logout = logout;
